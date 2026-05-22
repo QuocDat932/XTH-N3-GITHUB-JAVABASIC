@@ -1,6 +1,8 @@
 package org.example;
 
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +14,7 @@ public class Main {
         list.add("Giảng viên: Thầy Bùi Quốc Đạt");
         list.add("Task01: New Function Print");
         printMessage(list);
+        System.out.println("Nhánh này được checkout từ task01");
     }
 
     public static void printMessage(List<String> list){
