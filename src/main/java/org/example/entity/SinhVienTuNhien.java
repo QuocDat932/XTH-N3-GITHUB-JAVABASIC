@@ -1,19 +1,10 @@
 package org.example.entity;
 
 public class SinhVienTuNhien extends SinhVien {
-    private double diemToan;
     private double diemLy;
     private double diemHoa;
 
     public SinhVienTuNhien(){};
-
-    public double getDiemToan() {
-        return diemToan;
-    }
-
-    public void setDiemToan(double diemToan) {
-        this.diemToan = diemToan;
-    }
 
     public double getDiemLy() {
         return diemLy;
@@ -31,4 +22,8 @@ public class SinhVienTuNhien extends SinhVien {
         this.diemHoa = diemHoa;
     }
 
+    public void setDiemTB() {
+        double dtb = (this.getDiemToan() * 2 + this.diemLy + this.diemHoa) / 4;
+        super.setDiemTB(dtb);
+    }
 }
