@@ -24,4 +24,13 @@ public class SinhVienXaHoi extends SinhVien{
         double dtb = (this.getDiemToan() + this.diemVan + this.diemAnh) / 3;
         super.setDiemTB(dtb);
     }
+
+    public void outPutIn4(){
+        System.out.println(">> MSSV: "+ getMaSoSinhVien());
+        System.out.println(">> Diem Toan: "+ super.getDiemToan());
+        System.out.println(">> Diem Van: "+ this.getDiemVan());
+        System.out.println(">> Diem Anh: "+ this.getDiemAnh());
+        System.out.println(">> Diem Trung Binh: "+ super.getDiemTB());
+        System.out.println("----------------------------------------");
+    }
 }
