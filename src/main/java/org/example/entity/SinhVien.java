@@ -1,6 +1,6 @@
 package org.example.entity;
 
-public class SinhVien {
+public abstract class SinhVien {
     private String maSoSinhVien;
     private String hoVaTen;
     private double diemToan;
@@ -37,4 +37,6 @@ public class SinhVien {
     public void setDiemTB(double diemTB) {
         this.diemTB = diemTB;
     }
+
+     public abstract void calDTB();
 }

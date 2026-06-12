@@ -6,26 +6,15 @@ public class SinhVienTuNhien extends SinhVien {
 
     public SinhVienTuNhien(){};
 
-    public double getDiemLy() {
-        return diemLy;
-    }
+    public double getDiemLy() { return diemLy;    }
 
-    public void setDiemLy(double diemLy) {
-        this.diemLy = diemLy;
-    }
+    public void setDiemLy(double diemLy) {this.diemLy = diemLy;    }
 
-    public double getDiemHoa() {
-        return diemHoa;
-    }
+    public double getDiemHoa() {return diemHoa;    }
 
-    public void setDiemHoa(double diemHoa) {
-        this.diemHoa = diemHoa;
-    }
+    public void setDiemHoa(double diemHoa) {this.diemHoa = diemHoa;}
 
-    public void setDiemTB() {
-        double dtb = (this.getDiemToan() * 2 + this.diemLy + this.diemHoa) / 4;
-        super.setDiemTB(dtb);
-    }
+
 
     public void outPutIn4(){
         System.out.println(">> MSSV: "+ this.getMaSoSinhVien());
@@ -44,6 +33,12 @@ public class SinhVienTuNhien extends SinhVien {
         this.setDiemLy(diemLy);
         this.diemHoa = diemHoa;
 
-        this.setDiemTB();
+
+    }
+
+    @Override
+    public void calDTB() {
+        double dtb = (this.getDiemToan() * 2 + this.diemLy + this.diemHoa) / 4;
+        super.setDiemTB(dtb);
     }
 }
